@@ -32,7 +32,6 @@ nav li{
   margin: auto;
   padding: 25px 15px;
   text-align: center;
-  flex-wrap: wrap;
 }
 #banner{
   max-width: 100%;
@@ -45,6 +44,7 @@ nav li{
   font-weight: 900;
   font-size: 2em;
   margin-top: 15px;
+  text-align: center;
 }
 #about p{
   max-width: 600px;
@@ -54,4 +54,22 @@ nav li{
 
 footer{
   text-align: center;
+}
+
+#benefits{
+  max-width: 80%;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+#benefits img{
+  width: 350px;
+  border-radius: 10px;
+}
+#infos{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  max-width: 750px;
+  margin: auto;
 }
