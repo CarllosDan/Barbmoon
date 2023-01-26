@@ -8,7 +8,6 @@
   --lightGrey: #CCC;
   color: var(--darkGrey);
   scroll-behavior: smooth;
-  transition: 300ms;
 }
 body{
   background-color: var(--lightGrey);
@@ -46,6 +45,7 @@ nav a {
   color: var(--lightGrey);
   font-weight: 500;
   margin: 15px;
+  transition: 300ms;
 }nav a:hover {
   font-weight: 800;
 }

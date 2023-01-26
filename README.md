@@ -34,10 +34,4 @@ As aulas foram ministradas pelo professor **[Pedro Marins](https://www.linkedin.
 
 ### Licença
 
-Este projeto está sob a licença [MIT](./LICENSE). </br>
 Feito por Guilherme Paes 👋🏽 Entre em contato!
-
-
-<h1 style = "text-align: center">
-  <img alt="License" title="#License" src="https://img.shields.io/github/license/guipaex/BarbeariaAlura" />
-</h1>
