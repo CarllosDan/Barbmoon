@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  --darkGrey: #3d3d3d;
+  --lightGrey: #CCC;
+  scroll-behavior: smooth;
+  transition: 300ms;
+}
+header{
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  background-color: var(--lightGrey);
+  justify-content: space-around;
+  display: flex;
+  z-index: 10;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.3) );
+}
+#logo{
+  height: 125%;
+  position: relative;
+  top: 5px;
+}
+nav{
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--darkGrey);
+  font-weight: 500;
+  margin: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--lightGrey);
+}
+nav a:hover{
+  font-weight: 800;
+  border: 1px solid var(--darkGrey);
+}
+.banner{
+  z-index: 0;
+  margin-bottom: 10px;
+  margin: 0 auto 30px auto;
+}
+.banner img {
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+#about{
+  max-width: 80%;
+  margin: auto;
+  padding: 25px 15px;
+  text-align: center;
+}
+.title{
+  font-weight: 900;
+  font-size: 2em;
+  margin-top: 15px;
+  text-align: center;
+}
+#about p{
+  max-width: 600px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+footer{
+  text-align: center;
+}
+
+#benefits{
+  max-width: 80%;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+#benefits img{
+  width: 350px;
+  border-radius: 10px;
+}
+#infos{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  max-width: 750px;
+  margin: auto;
+}
