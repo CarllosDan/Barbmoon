@@ -1,46 +1,46 @@
 @import url(main.css);
 
 .produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+	max-width: 900px;
+	height: 70vh;
+	margin: auto;
+	display: flex;
 }
 
 .produtos li {
-	display: inline-block;
+	height: 400px;
+	display: flex;
+	list-style: none;
 	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
+	margin: auto 20px;
+	padding: 20px 20px;
 	border-radius: 10px;
-}
+	transition: 300ms;
+	background-color: white;
 
+}.produtos li h2{
+	text-transform: uppercase;
+	line-height: 2rem;
+	font-size: 2rem;
+	font-weight: 800;
+}
 .produtos li:hover {
-	border-color: #C78C19;
+	border: 3px solid var(--darkGrey);
+	padding: 35px 30px;
+	filter: drop-shadow( 0 0 10px rgba(0, 0, 0, 0.3));
 }
-
-.produtos li:active {
-	border-color: #088C19;	
-}
-
-.produtos li:hover h2 {
-	font-size: 34px;
-}
-
-.produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
+.content{
+	margin: auto;
 }
 
 .produto-descricao {
-	font-size: 18px;
+	width: 85%;
+	margin: auto;
+	line-height: 1rem;
 }
 
 .produto-preco {
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: 900;
 	margin-top: 10px;
 }
