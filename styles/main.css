@@ -132,5 +132,12 @@ footer p, footer a{
   color: var(--lightGrey);
 }
 footer p{
-  width: 300px;
+  min-width: 300px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 500px)  {
+  .utensilios{
+    display: none;
+  }
 }
