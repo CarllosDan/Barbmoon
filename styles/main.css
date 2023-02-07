@@ -4,10 +4,14 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  --darkGrey: #3d3d3d;
+  --darkGrey: #161616;
   --lightGrey: #CCC;
   color: var(--darkGrey);
   scroll-behavior: smooth;
+}
+main{
+  max-width: 940px;
+  margin: auto;
 }
 body{
   background-color: var(--lightGrey);
@@ -36,12 +40,10 @@ nav {
   display: flex;
   align-items: center;
 }
-
 nav ul {
   display: flex;
   list-style: none;
 }
-
 nav a {
   text-decoration: none;
   text-transform: uppercase;
@@ -51,33 +53,39 @@ nav a {
   transition: 300ms;
 }nav a:hover {
   font-weight: 800;
-}
-
-.banner img {
+} nav a:not(:hover){
+  opacity: 0.5;
+} 
+.banner {
   width: 100%;
-  min-height: 250px;
+  max-width: 900px;
+  max-height: 400px;
   object-fit: cover;
+  margin: auto;
 }
-
+.utensilios{
+  width: 250px;
+  margin: 0 30px 15px 5%;
+  border-radius: 5px;
+  float: left;
+}
 #about {
-  max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   padding: 10px;
   text-align: center;
+  justify-content: center;
 }
-
 .title {
   font-weight: 800;
   margin: 35px;
   text-align: center;
   text-transform: uppercase;
+  clear: both;
 }
-
-#about p {
-  text-align: center;
-  margin: 15px auto;
+#about > p {
+  margin: 20px auto;
+  text-align: left;
 }
-
 #benefits {
   margin: auto;
   padding: 25px 15px;
@@ -87,41 +95,42 @@ nav a {
   text-align: left;
   align-items: center;
 }
-
 #benefits img {
   width: 350px;
-  border-radius: 10px;
+  border-radius: 5px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5) );
 }
-
 #benefits .list {
   justify-items: center;
   margin: 15px;
   width: 250px;
   font-weight: 600;
 }
-
 #vidContainer{
   padding-bottom: 56.25%;
   position: relative;
+  margin: 30px;
 }
 #vidContainer iframe{
   position: absolute;
   left: 0;
+  border-radius: 5px;
 }
-
 footer {
   margin-top: auto;
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  align-items: center;
+  text-align: left;
   height: 100px;
   background-color: var(--darkGrey);
 }
 footer img{
   height: 100%;
 }
-footer p{
-  line-height: 100px;
+footer p, footer a{
   color: var(--lightGrey);
+}
+footer p{
+  width: 300px;
 }

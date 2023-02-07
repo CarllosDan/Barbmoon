@@ -24,28 +24,30 @@
 
   <main>
     <form>
+      <section id="infos">
       <label form="nome-sobrenome">Nome e sobrenome</label>
-      <input type="text" id="nome-sobrenome" class="input-padrao" required>
+      <input type="text" id="nome-sobrenome" class="input-padrao" required placeholder="Fulano de Tal">
 
       <label for="email">Email</label>
       <input type="email" id="email" class="input-padrao" required placeholder="exemplo@domínio.com">
 
       <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXX-XXXX">
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
 
       <label for="mensagem">Mensagem</label>
       <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+     </section>
 
       <fieldset>
-        <legend>Como prefere o nosso contato?</legend>
+        <legend>Como prefere nosso contato?</legend>
+        <label for="radio-email">
+        <input type="radio" name="contato" value="E-mail" id="radio-email">E-mail</label>
 
-        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+        <label for="radio-telefone">
+        <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 
-        <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
-            id="radio-telefone">Telefone</label>
-
-        <label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp"
-            checked>Whatsapp</label>
+        <label for="radio-whatsapp">
+        <input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
       </fieldset>
 
       <fieldset>
@@ -56,12 +58,14 @@
           <option>Noite</option>
         </select>
       </fieldset>
-      <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+      <label class="checkbox">
+        <input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
       <input type="submit" value="Enviar" class="enviar">
     </form>
 
-    <table>
+    <table id="horario">
       <thead>
         <tr>
           <th>Dia</th>
@@ -70,25 +74,24 @@
       </thead>
       <tbody>
         <tr>
-          <td>Segunda</td>
+          <td>Segunda-Feira</td>
           <td>8h - 20h</td>
         </tr>
         <tr>
-          <td>Quarta</td>
+          <td>Quarta-Feira</td>
           <td>8h - 20h</td>
         </tr>
         <tr>
-          <td>Sexta</td>
+          <td>Sexta-Feira</td>
           <td>8h - 20h</td>
         </tr>
       </tbody>
     </table>
-
   </main>
 
   <footer>
-    <img src="assets/logo-branco.png">
-    <p>&copy; Copyright Barbearia Alura - 2023</p>
+    <img src="assets/logo-branco.png" alt="Logo da Barbearia Alura">
+    <p>&copy; Desenvolvido no curso de HTML e CSS3 da <a href="https://www.alura.com.br/formacao-html-e-css">Alura</a>, durante o programa Desenvolve 2023 do Grupo Boticário.</p>
   </footer>
 </body>
 
