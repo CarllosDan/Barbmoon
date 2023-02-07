@@ -1,7 +1,7 @@
 <h1 align="center">Barbearia Alura</h1>
 
 <h3 align="center">
-  <img alt="Logo" title="#logo" width="150px" src=".github/logo.png">
+  <img alt="Logo" title="#logo" width="100%" src="assets/capa.jpg">
 </h3>
 
 
@@ -9,7 +9,9 @@
 
 O site da <strong>Barbearia Alura</strong> foi um projeto produzido durante as aulas de **Web Developer** disponível na plataforma da [Alura](https://www.alura.com.br/sobre). Ele possui uma página inicial com localização e vídeo de apresentação, uma página listando os produtos e uma de formulário de cadastro.
 
+## [Clique aqui para ver o resultado](guipaex.github.io/BarbeariaAlura/)
 
+<br>
 
 ## Tecnologias Utilizadas
 
